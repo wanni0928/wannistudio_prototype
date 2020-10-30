@@ -1,0 +1,254 @@
+
+/* common */
+body *, 
+*::before,
+body *::after {
+    box-sizing: border-box;
+}
+.contents-area {height: 100%;}
+.content-wrap {padding: 80px; height: 100%;}
+
+/*link style*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*fixed layout*/
+.fixed-contents {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 48px;
+    z-index: 2;
+    background-color: Transparent;
+}
+
+.fixed-container{
+    position: relative;
+    height: 100%;
+    
+}
+
+.main-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 64px;
+    line-height: 46px;
+}
+
+.nav-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 45px;
+    cursor: pointer;
+}
+.nav-btn span {
+    width: 100%;
+    height: 4px;
+    border-radius: 1px;
+    display: block;
+}
+.nav-btn span:nth-child(2) {
+    margin: 16px 0;
+} 
+
+.display-time {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.resume {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 36px;
+}
+
+/*header*/
+.navigation-area {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    
+}
+
+.content-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative; 
+    align-items: center;
+}
+
+.navigation {
+    position: relative;
+    font-size: 64px;
+    color: #c3c3c3;
+    font-weight: 300;
+    z-index: 2;
+}
+/*footer*/
+.footer::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin: 48px 0 24px;
+}
+.footer h2 {
+    font-size: 24px;
+    color: #757575;
+}
+.footer span {
+    color: rgba(255,255,255, 0.2);
+}
+
+/*content*/
+
+/*cardview*/
+.contents-area.works {height: auto; padding-top: 120px;}
+.contents-area.works .main-contents {
+    display: flex;
+    justify-content: center;
+}
+.main-contents .cardview-container {
+    display: flex;
+    width: 80%;
+    flex-direction : row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.cardview-item {
+    width: 49%;
+    margin: 12px 0;
+    border-radius: 2px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.cardview-img-wrap {
+    width: 100%;
+    height: 250px;
+}
+
+.show-processing-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #bbbfca;
+    
+}
+.show-processing-work::after {
+    content: "processing";
+    display: block;
+    margin-top: 15px;
+}
+
+.show-processing-work ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 53px;
+    height: 24px;
+    margin-top: 15px;
+}
+.processing-work-item {
+    width: 6px;
+    height: 24px;
+    background-color: #ffffff;
+    
+}
+.processing-guidance {
+    display: block;
+}
+.cardview-txt-wrap {
+    padding: 24px;
+    color: #333333;
+    line-height: 1.2;
+}
+.cardview-title {
+    font-size: 42px;
+    font-weight: 500;
+}
+.cardview-sub-title {
+    font-size: 24px;
+}
+.cardview-txt {
+    font-size: 18px;
+}
+.countdown {
+    display: inline-block;
+    font-size: 36px;
+    margin: 14px 0;
+}
+
+/* contact */
+
+article{text-align: left;}
+.contact h2 {
+    font-size: 96px;
+}
+
+.contact .main-contents {
+    width: 70%;
+}
+
+/*form*/
+legend {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0); 
+}
+
+form p {
+    display: inline-block;
+    width: 48%;
+    margin-top: 32px;
+    padding-right: 12px;
+}
+
+form p label {
+    display: block;
+    font-size: 36px;
+    color: #495464;
+    
+}
+
+form p input, form p textarea {
+    width: 100%;
+    border:0;
+    border-bottom: 2px solid #333;
+}
+
+.submmit-btn {
+    background-color: #bbbfca;
+    border: 0;
+    border-radius: 4px;
+    padding: 8px 24px;
+    margin: 0;
+    display: block;
+    font-size: 48px;
+    margin-top: 24px;
+    font-weight: 300;
+    color: #ffffff;
+}
