@@ -1,0 +1,84 @@
+/*main logo*/
+.fixed-contents .main-logo, .fixed-container .display-time, .fixed-container .resume {color: #333;  transition: 0.3s ease-in all}
+.fixed-contents.active .main-logo, .fixed-container.active .display-time, .fixed-container.active .resume {color: #ffffff;}
+.main-contents {z-index: 2;}
+.main-contents.active {z-index: auto;}
+/*menu btn*/
+.nav-btn span {
+    transition: 0.3s ease-in all;
+    background-color: #333;
+}
+
+.nav-btn.active span {
+    background-color: #fff;
+}
+
+.nav-btn.active span:first-child {
+    transform: rotate(45deg);
+    position: relative;
+    top: 19px;
+}
+.nav-btn span:first-child {
+    transform: rotate(0deg);
+    position: relative;
+    top: 0;
+}
+
+.nav-btn span:last-child {
+    transform: rotate(0deg);
+    position: relative;
+    bottom: 0;
+}
+.nav-btn.active span:last-child {
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 19px;
+}
+.nav-btn span:nth-child(2) {
+    opacity: 1;    
+}
+.nav-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+/*navigation area*/
+.navigation-area {top: -100%; transition: 0.3s ease-in all;}
+.navigation-area.active {top: 0;}
+
+/*main contents*/
+.main-contents::before {transform: scaleX(1); transition: 0.6s ease-in all;}
+.main-contents {transition: 0.3s ease all; filter: blur(0); opacity: 1;}
+.main-contents.active {filter: blur(1.3rem); opacity: 0.3;}
+.main-contents.active::before {transform: scaleX(0);}
+
+/*processing*/
+.show-processing-work ul .processing-work-item {
+    animation: scaleing 1.5s ease infinite;
+}
+.show-processing-work ul .processing-work-item:nth-child(1){
+    animation-delay: 0;
+}
+.show-processing-work ul .processing-work-item:nth-child(2){
+    animation-delay: 0.2s;
+}
+.show-processing-work ul .processing-work-item:nth-child(3){
+    animation-delay: 0.3s;
+}
+.show-processing-work ul .processing-work-item:nth-child(4){
+    animation-delay: 0.4s;
+}
+.show-processing-work ul .processing-work-item:nth-child(5){
+    animation-delay: 0.5s;
+}
+
+@keyframes scaleing { 
+    60% {
+        transform: scaleY(1);
+    }
+    80% {
+        transform: scaleY(2);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
