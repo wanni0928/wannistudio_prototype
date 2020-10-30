@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/asset/css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/css/animation.css">
+    <link rel="stylesheet" href="/asset/css/layout.css">
+    <link rel="stylesheet" href="/asset/css/main.css">
+    <link rel="stylesheet" href="/asset/css/responsive.css">
+</head>
+<body>
+    <div id="jsFixedContainer" class="fixed-contents">
+        <div class="fixed-container">
+            <h1 class="main-logo">
+                <span>W</span>
+            </h1>
+            <div id="jsMenuBtn" class="nav-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="display-time">
+                <span id = "jsClock">
+                    00:00:00
+                </span>
+            </div>
+            <div class="resume">
+                <a href="#">
+                    RESUME
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- navigation -->
+    <div id="jsNavigationArea" class="navigation-area">
+        <div class="content-wrap">
+            <header class="header">
+                <nav class="navigation">
+                    <ul>
+                        <li class="gnb">
+                            <a href="/works/works.html">Works</a>
+                        </li>
+                        <li class="gnb">
+                            <a href="/">Abount</a>
+                        </li>
+                        <li class="gnb">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <footer class="footer">
+                <h2>WanniStudio</h2>
+                <span><em id = "jsYear">2020</em> WanniStudio all rights reserved.</span>
+            </footer>
+        </div>
+    </div>
+
+    <!-- main contents -->
+    <div class="contents-area contact">
+        <div class="content-wrap">
+            <section id="jsMainContents" class="main-contents">
+                <article class="contact">
+                    <h2>CONTACT</h2>
+                    <form action="https://formspree.io/chlgudwnd123@gmail.com" method="post">
+                        <fieldset>
+                            <legend>contact form</legend>
+                            <p class="customer-company">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="customerCompany">
+                            </p>
+                            <p class="customer-name">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="customerName">
+                            </p>
+                            <p class="customer-email">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="userEmail">
+                            </p>
+                            <p class="customer-phone">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="Phone" name="userPhone">
+                            </p>
+                            <p class="customer-content">
+                                <label for="content">Company</label>
+                                <textarea name="userContent" id="content">
+
+                                </textarea>
+                            </p>
+                            <button type="submit" class="submmit-btn">
+                                SUBMMIT
+                            </button>
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+        </div>
+    </div>
+    <script src="/asset/js/main.js"></script>
+    <script src="/asset/js/dropdown.js"></script>
+    <script src="/asset/js/clock.js"></script>
+</body>
+</html>
