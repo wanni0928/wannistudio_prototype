@@ -1,5 +1,17 @@
-/*main*/
+@media all and (max-width: 1024px){
+    /*works*/
+    .main-contents .cardview-container, .contact .main-contents {
+        width: 90%;
+    }
+
+    /*contact*/
+    .contact .main-contents {
+        padding-top: 60px;
+    }
+}
+
 @media all and (max-width: 860px) {
+    /*main*/
     .main-contents .main-slogan, .main-contents .sub-slogans {
         display: block;
         text-align: left;
@@ -19,16 +31,94 @@
         margin-left: 0;
     }
     
+    /*works*/
+    .cardview-item {
+        width: 100%;
+    }
 }
 
 @media all and (max-width: 540px) {
+    /*fixed contents*/
     .fixed-contents {padding: 16px;}
-    .content-wrap {padding: 52px;}
+    .main-logo {font-size: 32px;}
+    .nav-btn {width: 40px; height: 24px;}
+    .nav-btn span:nth-child(2) {
+        margin: 6px 0;
+    }
+    .nav-btn.active span:first-child {
+        top: 15px;
+    }
+    .nav-btn.active span:last-child {
+        bottom: 5px;
+    }
+    /*common*/
+    .content-wrap {padding: 42px;}
+    .navigation {
+        font-size: 32px;
+    }
+    /*main*/
     .main-slogan {
         font-size: 52px;
     }
     .sub-slogans li {font-size: 72px;}
 
-    .nav-btn {width: 55px; height: 40px;}
     .resume {font-size: 24px;}
+
+    /*works*/
+    .contents-area.works {
+        padding-top: 60px;
+    }
+    .works .content-wrap {
+        padding-top: 20px;
+    }
+    .cardview-img-wrap {
+        height: 132px;
+    }
+    .show-processing-work ul{
+        width: 38px;
+    }
+    .processing-work-item{
+        width: 4px;
+    }
+    .show-processing-work::after {
+        margin-top: 7px;
+    }
+
+    .cardview-txt-wrap {
+        padding: 12px;
+    }
+
+    .cardview-title {
+        font-size: 21px;
+    }
+    .cardview-sub-title {
+        font-size: 12px;
+    }
+    .cardview-txt {
+        font-size: 11px;
+    }
+    .countdown {
+        font-size: 18px;
+    }
+
+    /*contact*/
+    .contact .main-contents {
+        padding-top: 0px;
+    }
+    .contact h2 {
+        font-size: 48px;
+    }
+    form p {
+        margin-top: 16px;
+    }
+    form p label {
+        font-size: 18px;
+    }
+    .submmit-btn {
+        font-size: 24px;
+    }
+
+    .footer {
+        text-align: center;
+    }
 }
